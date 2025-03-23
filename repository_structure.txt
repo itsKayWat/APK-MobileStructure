@@ -1,0 +1,90 @@
+APK-MobileStructure - Repository Structure
+=================================
+
+This document outlines the structure of the APK-MobileStructure repository.
+
+Repository Root/
+├── project_standardizer.py      # Main script that standardizes projects
+├── requirements.py              # Script to check/install dependencies
+├── README.md                    # GitHub-formatted documentation
+├── README.html                  # Web-friendly documentation
+├── README.txt                   # Plain text documentation
+├── LICENSE                      # MIT License
+├── CHANGELOG.md                 # Version history and changes
+└── examples/                    # Example use cases
+    ├── flutter_sample/          # Sample Flutter project structure
+    │   └── structure.md         # Description of Flutter structure
+    └── android_sample/          # Sample Android project structure
+        └── structure.md         # Description of Android structure
+
+Output Files Generated for Projects
+==================================
+
+When you run APK-MobileStructure on a Flutter or Android project, it creates the following
+structure in the target project:
+
+Flutter Project Structure
+------------------------
+project_root/
+├── lib/                      # Application source code
+│   ├── models/               # Data models
+│   ├── providers/            # State management
+│   ├── screens/              # Main screen components
+│   ├── widgets/              # Reusable UI components
+│   ├── services/             # API and backend services
+│   ├── utils/                # Utility functions and helpers
+│   └── main.dart             # Application entry point
+├── assets/                   # Static resources
+│   ├── fonts/                # Custom fonts
+│   ├── images/               # Images and icons
+│   └── icons/                # App-specific icons
+├── test/                     # Test files
+│   ├── unit_test/            # Unit tests
+│   ├── widget_test/          # Widget tests
+│   └── integration_test/     # Integration tests
+├── android/                  # Android-specific files
+├── ios/                      # iOS-specific files
+├── web/                      # Web-specific files (if present)
+├── macos/                    # macOS-specific files (if present)
+├── linux/                    # Linux-specific files (if present)
+├── windows/                  # Windows-specific files (if present)
+├── .github/                  # GitHub configurations
+│   └── workflows/            # CI/CD workflows
+├── scripts/                  # Utility scripts
+├── .gitignore                # Git ignore file
+├── analysis_options.yaml     # Dart analyzer settings
+├── pubspec.yaml              # Dependencies and metadata
+├── pubspec.lock              # Locked dependencies
+├── README.md                 # Project documentation
+├── CONTRIBUTING.md           # Contribution guidelines
+├── LICENSE                   # MIT license
+├── CHANGELOG.md              # Version history
+└── REPOSITORY_STRUCTURE.md   # Structure documentation
+
+Android Project Structure
+------------------------
+project_root/
+├── app/                      # Application module
+│   ├── src/                  # Source files
+│   │   ├── main/             # Main source set
+│   │   │   ├── java/         # Java/Kotlin source files
+│   │   │   ├── res/          # Resources
+│   │   │   └── AndroidManifest.xml
+│   │   ├── test/             # Unit tests
+│   │   └── androidTest/      # Instrumentation tests
+│   └── build.gradle          # App-level build configuration
+├── gradle/                   # Gradle configuration
+│   └── wrapper/              # Gradle wrapper
+├── .github/                  # GitHub configurations
+│   └── workflows/            # CI/CD workflows
+├── scripts/                  # Utility scripts
+├── .gitignore                # Git ignore file
+├── build.gradle              # Project-level build configuration
+├── settings.gradle           # Project settings
+├── gradlew                   # Gradle wrapper script (Unix)
+├── gradlew.bat               # Gradle wrapper script (Windows)
+├── README.md                 # Project documentation
+├── CONTRIBUTING.md           # Contribution guidelines
+├── LICENSE                   # MIT license
+├── CHANGELOG.md              # Version history
+└── REPOSITORY_STRUCTURE.md   # Structure documentation 
