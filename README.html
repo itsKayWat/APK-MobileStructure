@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK-MobileStructure: Android & Flutter Project Standardizer</title>
+    <style>
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --border-color: #eee;
+            --container-bg: #fff;
+            --container-shadow: rgba(0,0,0,0.1);
+            --code-bg: #f7f9fa;
+            --highlight-bg: #fffbdd;
+            --highlight-border: #e6cc22;
+            --table-header-bg: #f2f2f2;
+            --table-border: #ddd;
+            --table-alternate-row: #f9f9f9;
+            --btn-primary-bg: #0077ee;
+            --btn-primary-text: #ffffff;
+            --btn-hover-bg: #0066cc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #ffffff;
+                --heading-color: #e6e6e6;
+                --border-color: #333;
+                --container-bg: #2d2d2d;
+                --container-shadow: rgba(0,0,0,0.3);
+                --code-bg: #383838;
+                --highlight-bg: #3a3a20;
+                --highlight-border: #b3a018;
+                --table-header-bg: #444;
+                --table-border: #555;
+                --table-alternate-row: #333;
+                --btn-primary-bg: #0077ee;
+                --btn-primary-text: #ffffff;
+                --btn-hover-bg: #0066cc;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        h1, h2, h3 {
+            color: var(--heading-color);
+        }
+        h1 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        code, pre {
+            background-color: var(--code-bg);
+            border-radius: 3px;
+            padding: 2px 5px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        pre {
+            padding: 15px;
+            overflow: auto;
+        }
+        .container {
+            background-color: var(--container-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--container-shadow);
+            padding: 30px;
+        }
+        .highlight {
+            background-color: var(--highlight-bg);
+            padding: 10px;
+            border-left: 3px solid var(--highlight-border);
+            margin: 15px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid var(--table-border);
+        }
+        th {
+            background-color: var(--table-header-bg);
+        }
+        tr:nth-child(even) {
+            background-color: var(--table-alternate-row);
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn-primary {
+            background-color: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+        }
+        .btn-primary:hover {
+            background-color: var(--btn-hover-bg);
+        }
+        .developer-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        .coffee-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        @media (max-width: 600px) {
+            .coffee-options {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>APK-MobileStructure: Android & Flutter Project Standardizer</h1>
+        
+        <h2>Overview</h2>
+        <p>
+            APK-MobileStructure is a powerful command-line tool that automatically standardizes the directory structure and configuration
+            of Android and Flutter projects according to industry best practices. It transforms messy, inconsistent project 
+            structures into clean, organized codebases ready for collaboration and publication.
+        </p>
+
+        <div class="highlight">
+            <strong>Problem:</strong> Inconsistent project structures lead to confusion, wasted time, and development friction in teams.
+            <br>
+            <strong>Solution:</strong> One command to standardize your entire project, creating a professional and consistent structure.
+        </div>
+
+        <h2>Why Use APK-MobileStructure?</h2>
+        <ul>
+            <li><strong>Save Time</strong> - Manual organization can take hours; APK-MobileStructure takes seconds</li>
+            <li><strong>Professional Standards</strong> - Follows industry best practices for project organization</li>
+            <li><strong>Improved Collaboration</strong> - Consistent structures help team members navigate projects quickly</li>
+            <li><strong>Complete Solution</strong> - Creates essential documentation, CI/CD workflows, and configuration files</li>
+            <li><strong>Preserve Code</strong> - Non-destructive organization that keeps your existing code intact</li>
+        </ul>
+
+        <h2>Installation</h2>
+        <p>APK-MobileStructure requires Python 3.6 or newer. Installation is simple:</p>
+        
+        <h3>Method 1: Clone the Repository</h3>
+        <pre><code>git clone https://github.com/YourUsername/APK-MobileStructure.git
+cd APK-MobileStructure
+python requirements.py</code></pre>
+
+        <h3>Method 2: Direct Download</h3>
+        <ol>
+            <li>Download <code>project_standardizer.py</code> and <code>requirements.py</code></li>
+            <li>Run <code>python requirements.py</code> to install dependencies</li>
+        </ol>
+
+        <h2>How to Use</h2>
+        <pre><code>python project_standardizer.py --type [flutter|android] --path [project_path] [--name "Project Name"] [--description "Project Description"]</code></pre>
+
+        <h3>Parameters:</h3>
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Required</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>--type</code></td>
+                <td>Yes</td>
+                <td>Type of project: "flutter" or "android"</td>
+            </tr>
+            <tr>
+                <td><code>--path</code></td>
+                <td>No</td>
+                <td>Path to project root (default: current directory)</td>
+            </tr>
+            <tr>
+                <td><code>--name</code></td>
+                <td>No</td>
+                <td>Custom project name (default: directory name)</td>
+            </tr>
+            <tr>
+                <td><code>--description</code></td>
+                <td>No</td>
+                <td>Project description for documentation</td>
+            </tr>
+        </table>
+
+        <h3>Example Usage:</h3>
+        <pre><code>python project_standardizer.py --type flutter --path ./my_flutter_project --name "Awesome Flutter App" --description "A beautiful cross-platform mobile application"</code></pre>
+
+        <h2>What Gets Standardized?</h2>
+        <p>APK-MobileStructure performs the following actions:</p>
+        <ol>
+            <li>Flattens nested project structures</li>
+            <li>Creates standard directory hierarchy for source code, assets, and tests</li>
+            <li>Generates essential documentation files (README, LICENSE, CHANGELOG, CONTRIBUTING)</li>
+            <li>Sets up configuration files (.gitignore, analysis options)</li>
+            <li>Creates CI/CD GitHub workflow files</li>
+            <li>Produces a comprehensive REPOSITORY_STRUCTURE.md document</li>
+        </ol>
+
+        <h2>Example Use Cases</h2>
+        <div class="highlight">
+            <h3>Scenario 1: Inherited Messy Project</h3>
+            <p>You've taken over a Flutter app with files scattered everywhere. Running APK-MobileStructure immediately brings order to chaos, letting you focus on development rather than organization.</p>
+            
+            <h3>Scenario 2: Starting a New Project</h3>
+            <p>You're beginning a new Android app and want to ensure you follow best practices from day one. APK-MobileStructure sets up everything you need to get started right.</p>
+            
+            <h3>Scenario 3: Preparing for Open Source</h3>
+            <p>You want to publish your app on GitHub but need proper documentation and structure. APK-MobileStructure creates all necessary files and organizes your code to professional standards.</p>
+        </div>
+
+        <h2>Requirements</h2>
+        <ul>
+            <li>Python 3.6 or newer</li>
+            <li>Standard Python libraries (all included in basic Python installation)</li>
+        </ul>
+
+        <h2>License</h2>
+        <p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+
+        <!-- Developer Signature Section -->
+        <div class="developer-section">
+            <h2>💰 Donate to KayWat</h2>
+            <p>
+                Hello developers! 👋 Your support keeps me fueled and creating! Thanks! ❤️
+            </p>
+            <div class="coffee-options">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=1coffee" class="btn btn-primary" target="_blank">
+                    ☕️ $6 (1 coffee)
+                </a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=2coffees" class="btn btn-primary" target="_blank">
+                    ☕️☕️ $12 (2 coffees)
+                </a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=3coffees" class="btn btn-primary" target="_blank">
+                    ☕️☕️☕️ $24 (3 coffees)
+                </a>
+            </div>
+            <p>Your support keeps me fueled and creating! Thanks!</p>
+        </div>
+    </div>
+</body>
+</html> 
